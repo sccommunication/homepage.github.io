@@ -6,12 +6,13 @@ body{
 
 header{
   text-align: right;
-  padding: 10px;
+  padding: 0vw;
   background-image: url(../img/SC-header.png);
-  height: 400px;
+  height: 30vw;
+  width: 100vw;
   background-size:cover;
   background-position: 50% 20%;
-  margin-bottom: 60px;
+  margin-bottom: 5vw;
 }
 
 header > img{
