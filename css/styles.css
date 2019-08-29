@@ -1,0 +1,184 @@
+body{
+  color: #333;
+  font-family: Verdana,sans-serif;
+  margin: 0;
+}
+
+header{
+  text-align: right;
+  padding: 10px;
+  background-image: url(../img/SC-header.png);
+  height: 400px;
+  background-size:cover;
+  background-position: 50% 20%;
+  margin-bottom: 60px;
+}
+
+header > img{
+  width: 100vw;
+  height:auto;
+}
+
+header nav{
+  position: absolute;
+  display: flex;
+  padding: 10px;
+}
+
+header ul{
+  margin: 0;
+  list-style-type: none;
+  padding left: 0;
+}
+
+header li{
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+header li >a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+header li >a:hover{
+  color: royalblue;
+}
+
+.introduction .rinen {
+  width: 80%;
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+.introduction .rinen p{
+  width: 100%;
+  text-align:left;
+}
+
+.introduction .rinen h1{
+  font-size: 30px;
+}
+
+.introduction .rinen h2{
+  font-size: 30px;
+  text-align: left;
+}
+
+.introduction .rinen h3{
+  font-size: 30px;
+  text-align: left;
+}
+
+.introduction .circle1{
+  background: white;
+  margin-left: 5%;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: solid 9px skyblue;
+}
+
+.introduction .circle1 .kai1 {
+  width: 400px;
+  text-align:center;
+  margin-top:180px;
+  margin-right: auto;
+  margin-left: 15%;
+  float: left;
+}
+
+.introduction  .circle1 .kai1 p{
+  width: 400px;
+  text-align:left;
+}
+
+.introduction .kai1-photos{
+  margin-top:190px;
+  float: left;
+}
+
+.introduction .kai-1-2{
+  clear:both;
+}
+
+.introduction .circle2 {
+  background: white;
+  margin-top:5%;
+  margin-bottom:10%;
+  margin-right: 5%;
+  margin-left:auto;
+  width: 850px;
+  height: 850px;
+  border-radius: 50%;
+  border: solid 9px palegreen;
+}
+
+
+.introduction .circle2 .kai2 {
+  width: 400px;
+  text-align:center;
+  margin-right: 0;
+  margin-top: 160px;
+  margin-bottom:120px;
+  float: right;
+}
+
+.introduction .circle2 .kai2-photos>ul{
+  list-style: none;
+  margin-top: 170px;
+  margin-right: 15%;
+  margin-bottom: 220px;
+  padding:10px;
+  float:right;
+}
+
+.introduction .circle2 .kai2 h2{
+  font-size: 20px;
+}
+
+.introduction  .circle2 .kai2 > p{
+  width: 400px;
+  text-align:left;
+}
+
+footer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer >hr{
+  height: 3px;
+  background-color: lightgray;
+  width: 90%;
+  border: none;
+}
+
+footer .mail>a{
+  margin-left: 10%;
+}
+
+footer .mail>a:hover{
+  opacity: 0.6;
+}
+
+footer .mail .mail-paragraph{
+  margin-top:4px;
+  padding-left:10px;
+}
+
+footer .mail .copyright{
+  color: lightgray;
+  margin-top:2px;
+  margin-left:60%;
+}
+
+footer .mail{
+    padding-top:20px;
+    padding-bottom:20px;
+    display: flex;
+}

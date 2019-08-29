@@ -1,0 +1,118 @@
+body{
+  color: #333;
+  font-family: Verdana,sans-serif;
+  margin: 0;
+}
+
+header{
+  text-align: right;
+  padding: 10px;
+  background-image: url(../img/SC-header.png);
+  height: 400px;
+  background-size:cover;
+  background-position: 50% 20%;
+  margin-bottom: 60px;
+}
+
+header > img{
+  width: 100vw;
+  height:auto;
+}
+
+header nav{
+  position: absolute;
+  display: flex;
+  padding: 10px;
+}
+
+header ul{
+  margin: 0;
+  list-style-type: none;
+  padding left: 0;
+}
+
+header li{
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+header li >a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+header li >a:hover{
+  color: royalblue;
+}
+
+.newinformation {
+  width: 80%;
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+.newinformation >h1{
+  font-size: 30px;
+  text-align: left;
+}
+
+.newinformation .newinformation-scrole{
+  height: 600px;
+  background: linen;
+  margin-left: 20px;
+  margin-bottom: 80px;
+  overflow:auto;
+}
+
+.newinformation .newinformation-scrole p{
+  margin-left: 80px;
+  text-align: left
+}
+
+.newinformation .newinformation-scrole ul li{
+  padding:5px;
+  display: inline;
+  list-style: none;
+}
+
+footer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer >hr{
+  height: 3px;
+  background-color: lightgray;
+  width: 90%;
+  border: none;
+}
+
+footer .mail>a{
+  margin-left: 10%;
+}
+
+footer .mail>a:hover{
+  opacity: 0.6;
+}
+
+footer .mail .mail-paragraph{
+  margin-top:4px;
+  padding-left:10px;
+}
+
+footer .mail .copyright{
+  color: lightgray;
+  margin-top:2px;
+  margin-left:60%;
+}
+
+footer .mail{
+    padding-top:20px;
+    padding-bottom:20px;
+    display: flex;
+}
