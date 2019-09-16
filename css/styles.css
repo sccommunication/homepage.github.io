@@ -109,7 +109,6 @@ header li >a:hover{
 .introduction .circle2 {
   background: white;
   margin-top:5%;
-  margin-bottom:10%;
   margin-right: 5%;
   margin-left:auto;
   width: 850px;
@@ -148,7 +147,9 @@ header li >a:hover{
 
 .introduction .circle3{
   background: white;
+  margin-top:5%;
   margin-left: 5%;
+  margin-right: 0%;
   width: 750px;
   height: 750px;
   border-radius: 50%;
