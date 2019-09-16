@@ -173,9 +173,13 @@ header li >a:hover{
   text-align:left;
 }
 
-.introduction .kai3-photos{
-  margin-top:190px;
-  float: left;
+.introduction .circle2 .kai3-photos>ul{
+  list-style: none;
+  margin-top: 170px;
+  margin-right: 15%;
+  margin-bottom: 220px;
+  padding:10px;
+  float:right;
 }
 
 .introduction .kai-3-2{
