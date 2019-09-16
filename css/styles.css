@@ -164,7 +164,7 @@ header li >a:hover{
   text-align:center;
   margin-top:180px;
   margin-right: auto;
-  margin-left: 15%;
+  margin-left: 5%;
   float: left;
 }
 
@@ -176,10 +176,10 @@ header li >a:hover{
 .introduction .circle3 .kai3-photos>ul{
   list-style: none;
   margin-top: 170px;
-  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 220px;
   padding:10px;
-  float:right;
+  float:left;
 }
 
 .introduction .kai-3-2{
