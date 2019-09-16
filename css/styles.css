@@ -146,6 +146,39 @@ header li >a:hover{
   text-align:left;
 }
 
+.introduction .circle3{
+  background: white;
+  margin-left: 5%;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: solid 9px orange;
+}
+
+.introduction .circle3 .kai1 {
+  width: 400px;
+  text-align:center;
+  margin-top:180px;
+  margin-right: auto;
+  margin-left: 15%;
+  float: left;
+}
+
+.introduction  .circle3 .kai1 p{
+  width: 400px;
+  text-align:left;
+}
+
+.introduction .kai1-photos{
+  margin-top:190px;
+  float: left;
+}
+
+.introduction .kai-1-2{
+  clear:both;
+}
+
+
 footer{
   width: 100%;
   margin-left: auto;
