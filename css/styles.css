@@ -133,7 +133,7 @@ header li >a:hover{
   margin-right: 15%;
   margin-bottom: 220px;
   padding:10px;
-  clear: both;
+  float:right;
 }
 
 .introduction .circle2 .kai2 h2{
@@ -147,7 +147,7 @@ header li >a:hover{
 
 .introduction .circle3{
   background: white;
-  margin-top:10%;
+  margin-top:5%;
   margin-left: 5%;
   margin-right: 0%;
   width: 750px;
