@@ -48,37 +48,27 @@ header li >a:hover{
   color: royalblue;
 }
 
-.newinformation {
+.groups{
   width: 80%;
-  text-align: center;
+  font-size: 25px;
+  text-align: left;
   margin-right:auto;
   margin-left: auto;
 }
 
-
-.newinformation >h1{
+.groups h1{
   font-size: 30px;
-  text-align: left;
 }
 
-.newinformation .newinformation-scrole{
-  height: 600px;
-  background: linen;
-  margin-left: 20px;
-  margin-bottom: 80px;
-  overflow:auto;
+.groups .group1{
+  text-align: center;
 }
 
-.newinformation .newinformation-scrole p{
-  margin-left: 80px;
-  text-align: left
+.groups .group1 >nav>a{
+  color: inherit;
 }
 
-.newinformation .newinformation-scrole ul li{
-  padding:5px;
-  display: inline;
-  list-style: none;
-}
+
 
 footer{
   width: 100%;
