@@ -127,7 +127,7 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	background-color: #1b2538;
+	background-color: burlywood;
 }
 ul.topnav li {
 	float: left;
@@ -140,10 +140,10 @@ ul.topnav li a {
 	color: white;
 }
 ul.topnav li a:hover:not(.active) {
-	background-color: #a9bce2;
+	background-color: wheat;
 }
 ul.topnav li a.active {
-	background-color: #da3c41;
+	background-color: peru;
 }
 
 @media all and (max-width: 480px) {
