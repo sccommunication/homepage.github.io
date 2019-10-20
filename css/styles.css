@@ -1,226 +1,822 @@
+
+/*reser 開始*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* reset 終了*/
+
+
+
+
+
+
 body{
   color: #333;
   font-family: Verdana,sans-serif;
+  width:100vw;
   margin: 0;
 }
 
 header{
   text-align: right;
-  padding: 0vw;
-  background-image: url(../img/SC-header.png);
-  height: 30vw;
+  margin:0vw;
+  height: 35vw;
   width: 100vw;
-  background-size:cover;
-  background-position: 50% 20%;
   margin-bottom: 5vw;
 }
 
-header > img{
-  width: 100vw;
-  height:auto;
+
+
+
+
+/*ここからトップメニュー*/
+ul.topnav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #1b2538;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+ul.topnav li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+ul.topnav li a.active {
+	background-color: #da3c41;
 }
 
-header nav{
-  position: absolute;
-  display: flex;
-  padding: 10px;
+@media all and (max-width: 480px) {
+	 ul.topnav li {
+		float: none;
+	}
 }
+ /*ここまでトップメニュー*/
 
-header ul{
-  margin: 0;
-  list-style-type: none;
-  padding left: 0;
-}
 
-header li{
-  display: inline-block;
-  padding: 4px 16px;
-  font-size: 12px;
-}
-
-header li >a{
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-}
-
-header li >a:hover{
-  color: royalblue;
-}
-
-.introduction .rinen {
-  width: 80%;
+/*ここから理念のボックス*/
+section.rinen{
+  margin:10vw;
+  margin-top:10vw;
+  width:70vw;
+  height:10vw;
+  padding:5vw;
   text-align: center;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+  background: white;
+  transition:0.3s;
+  overflow: hidden;
+}
+
+section.rinen >img {
+  width:15vw;
+  display:inline;
+  vertical-align: middle;
+}
+
+section.rinen >p.rinentitle{
+  padding-left: 5vw;
+  font-size:5vw;
+  display:inline;
+  vertical-align: middle;
+}
+
+section.rinen >div.rinenshoukai{
+  width:60vw;
+  padding-top:5vw;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.rinen >div.rinenshoukai>p{
+  font-size:2vw;
+}
+
+section.rinen:hover{
+  overflow: hidden;
+  height:40vw;
+  width:70vw;
+}
+
+@media all and (max-width:320px) {
+  section.rinen{
+    margin-top:50vw;
+    width:70vw;
+    height:10vw;
+    padding:5vw;
+    text-align: center;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background: white;
+    transition:0.3s;
+    overflow: hidden;
+  }
+  section.rinen >img {
+    width:15vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >p.rinentitle{
+    padding-left: 3vw;
+    font-size:5vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >div.rinenshoukai{
+    width:60vw;
+    padding-top:5vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.rinen >div.rinenshoukai>p{
+    font-size:2vw;
+  }
+
+
+
+  section.rinen:hover{
+    overflow: hidden;
+    height:75vw;
+    width:70vw;
+  }
+}
+
+@media all and (min-width:321px) and (max-width: 480px){
+  section.rinen{
+    margin-top:40vw;
+    width:70vw;
+    height:10vw;
+    padding:5vw;
+    text-align: center;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background: white;
+    transition:0.3s;
+    overflow: hidden;
+  }
+  section.rinen >img {
+    width:15vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >p.rinentitle{
+    padding-left: 3vw;
+    font-size:5vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >div.rinenshoukai{
+    width:60vw;
+    padding-top:5vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.rinen >div.rinenshoukai>p{
+    font-size:2vw;
+  }
+
+
+
+  section.rinen:hover{
+    overflow: hidden;
+    height:60vw;
+    width:70vw;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+  section.rinen{
+    margin-top:20vw;
+    width:70vw;
+    height:10vw;
+    padding:5vw;
+    text-align: center;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background: white;
+    transition:0.3s;
+    overflow: hidden;
+  }
+  section.rinen >img {
+    width:15vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >p.rinentitle{
+    padding-left: 3vw;
+    font-size:5vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >div.rinenshoukai{
+    width:60vw;
+    padding-top:5vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.rinen >div.rinenshoukai>p{
+    font-size:3vw;
+  }
+
+
+
+  section.rinen:hover{
+    overflow: hidden;
+    height:70vw;
+    width:70vw;
+  }
+}
+
+@media all and (min-width:769px) and (max-width: 1024px){
+  section.rinen{
+    margin-top:20vw;
+    width:70vw;
+    height:10vw;
+    padding:5vw;
+    text-align: center;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background: white;
+    transition:0.3s;
+    overflow: hidden;
+  }
+  section.rinen >img {
+    width:15vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >p.rinentitle{
+    padding-left: 3vw;
+    font-size:5vw;
+    display:inline;
+    vertical-align: middle;
+  }
+
+  section.rinen >div.rinenshoukai{
+    width:60vw;
+    padding-top:5vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.rinen >div.rinenshoukai>p{
+    font-size:3vw;
+  }
+
+
+
+  section.rinen:hover{
+    overflow: hidden;
+    height:70vw;
+    width:70vw;
+  }
+}
+
+
+/*ここまで理念のボックス*/
+
+/*-----------------------------------------------------ここから1ページ目-----------------*/
+
+.newinformation {
+  width:40vw;
+  margin-left: 5vw;
+}
+
+.newinformation >h1{
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom:5vw;
+}
+
+.newinformation .newinformation-scrole{
+  width:40vw;
+  height: 30vw;
+  background: linen;
+  margin-bottom: 10vw;
+  overflow:auto;
+  margin: auto;
+  text-align: center;
+}
+
+.newinformation .newinformation-scrole >p{
+  font-size: 1.5vw;
+  width:35vw;
+  padding:1vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.newinformation .newinformation-scrole >ul {
+  margin:0;
+  padding:5px;
+  display: inline;
+  list-style: none;
+}
+
+.newinformation .newinformation-scrole >ul>li{
+  padding:5px;
+  display: inline;
+  list-style: none;
+}
+
+.newinformation .newinformation-scrole >ul>li>img{
+  width: 15vw;
+}
+
+@media all and (max-width:320px){
+  .newinformation {
+    width:80vw;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .newinformation >h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom:5vw;
+  }
+
+  .newinformation .newinformation-scrole{
+    width:80vw;
+    height: 50vw;
+    background: linen;
+    margin-bottom: 10vw;
+    overflow:auto;
+    margin: auto;
+  }
+
+  .newinformation .newinformation-scrole >p{
+    font-size:3vw;
+    width:60vw;
+    padding:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .newinformation .newinformation-scrole >ul {
+    margin:0;
+    padding:5px;
+    list-style: none;
+  }
+
+  .newinformation .newinformation-scrole >ul>li{
+    list-style: none;
+    display: list-item;
+  }
+
+  .newinformation .newinformation-scrole >ul>li>img{
+    width: 40vw;
+  }
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  .newinformation {
+    width:80vw;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .newinformation >h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom:5vw;
+  }
+
+  .newinformation .newinformation-scrole{
+    width:80vw;
+    height: 50vw;
+    background: linen;
+    margin-bottom: 10vw;
+    overflow:auto;
+    margin: auto;
+  }
+
+  .newinformation .newinformation-scrole >p{
+    font-size:3vw;
+    width:60vw;
+    padding:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .newinformation .newinformation-scrole >ul {
+    margin:0;
+    padding:5px;
+    list-style: none;
+  }
+
+  .newinformation .newinformation-scrole >ul>li{
+    list-style: none;
+    display: list-item;
+  }
+
+  .newinformation .newinformation-scrole >ul>li>img{
+    width: 40vw;
+  }
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  .newinformation {
+    width:80vw;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .newinformation >h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom:5vw;
+  }
+
+  .newinformation .newinformation-scrole{
+    width:80vw;
+    height: 50vw;
+    background: linen;
+    margin-bottom: 10vw;
+    overflow:auto;
+    margin: auto;
+  }
+
+  .newinformation .newinformation-scrole >p{
+    font-size:3vw;
+    width:60vw;
+    padding:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .newinformation .newinformation-scrole >ul {
+    margin:0;
+    padding:5px;
+    list-style: none;
+  }
+
+  .newinformation .newinformation-scrole >ul>li{
+    list-style: none;
+    display: list-item;
+  }
+
+  .newinformation .newinformation-scrole >ul>li>img{
+    width: 40vw;
+  }
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+  .newinformation {
+    width:80vw;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .newinformation >h1{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom:5vw;
+  }
+
+  .newinformation .newinformation-scrole{
+    width:80vw;
+    height: 50vw;
+    background: linen;
+    margin-bottom: 10vw;
+    overflow:auto;
+    margin: auto;
+  }
+
+  .newinformation .newinformation-scrole >p{
+    font-size:3vw;
+    width:60vw;
+    padding:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .newinformation .newinformation-scrole >ul {
+    margin:0;
+    padding:5px;
+    list-style: none;
+  }
+
+  .newinformation .newinformation-scrole >ul>li{
+    list-style: none;
+    display: list-item;
+  }
+
+  .newinformation .newinformation-scrole >ul>li>img{
+    width: 40vw;
+  }
+}
+
+
+/*----------------------------------------ここまで1ページ目--------------------------*/
+
+
+
+/*----------------------------------------ここから２パージ目-------------------------*/
+
+
+section.katudouhoukoku{
+  text-align: center;
+  width:60vw;
+  height: 150vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:10vw;
+}
+div.kai-1>button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:40vw;
+  height:40vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: lavender;
+  margin-top:5vw;
+}
+
+div.kai-2>button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:40vw;
+  height:40vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: honeydew;
+  margin-top:5vw;
+}
+
+div.kai-3>button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:40vw;
+  height:40vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: lavenderblush;
+  margin-top:5vw;
+}
+
+
+.katudouhoukoku-title{
+  color: lightskyblue;
+  display: block;
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: skyblue;
+}
+
+.katudouhoukoku-title::before, .katudouhoukoku-title::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: skyblue;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover .katudouhoukoku-title::before, button:hover .katudouhoukoku-title::after{
+  height: 100%;
+}
+
+/*--- Button 2 -------*/
+
+
+.btn-2::before, .btn-2::after{
+  transition-delay: 0s;
+}
+.btn-2 span::before, .btn-2 span::after{
+  transition-delay: 0.2s;
+}
+.btn-2::before{
+  right: 0;
+  top: 0;
+}
+.btn-2::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-2 span::before{
+  left: 0;
+  top: 0;
+}
+.btn-2 span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-2:hover::before, .btn-2:hover::after{
+  transition-delay: 0.2s;
+}
+.btn-2:hover span::before, .btn-2:hover span::after{
+  transition-delay: 0s;
+}
+
+button.btn-2 >img{
+  padding-top: 5vw;
+  width:30vw;
+}
+
+.katsudouhoukoku-midasi{
+  font-size: 4vw;
+}
+
+/*----------------------------------------ここまで２パージ目-------------------------*/
+
+/*----------------------------------------ここから３ページ目-------------------------*/
+.groups{
+  width: 80%;
+  font-size: 25px;
+  text-align: left;
   margin-right:auto;
   margin-left: auto;
 }
 
-.introduction .rinen p{
-  width: 100%;
-  text-align:left;
-}
-
-.introduction .rinen h1{
+.groups h1{
   font-size: 30px;
 }
 
-.introduction .rinen h2{
-  font-size: 30px;
-  text-align: left;
+.groups .group1{
+  text-align: center;
 }
 
-.introduction .rinen h3{
-  font-size: 30px;
-  text-align: left;
+.groups .group1 >nav>a{
+  color: inherit;
 }
-
-.introduction .circle1{
-  background: white;
-  margin-left: 5%;
-  width: 750px;
-  height: 750px;
-  border-radius: 50%;
-  border: solid 9px skyblue;
-}
-
-.introduction .circle1 .kai1 {
-  width: 400px;
-  text-align:center;
-  margin-top:180px;
-  margin-right: auto;
-  margin-left: 15%;
-  float: left;
-}
-
-.introduction  .circle1 .kai1 p{
-  width: 400px;
-  text-align:left;
-}
-
-.introduction .kai1-photos{
-  margin-top:190px;
-  float: left;
-}
-
-.introduction .kai-1-2{
-  clear:both;
-}
-
-.introduction .circle2 {
-  background: white;
-  margin-top:5%;
-  margin-right: 5%;
-  margin-left:auto;
-  width: 850px;
-  height: 850px;
-  border-radius: 50%;
-  border: solid 9px palegreen;
-}
-
-
-.introduction .circle2 .kai2 {
-  width: 400px;
-  text-align:center;
-  margin-right: 0;
-  margin-top: 160px;
-  margin-bottom:120px;
-  float: right;
-}
-
-.introduction .circle2 .kai2-photos>ul{
-  list-style: none;
-  margin-top: 170px;
-  margin-right: 15%;
-  padding:10px;
-  float:right;
-}
-
-.introduction .circle2 .kai2 h2{
-  font-size: 20px;
-}
-
-.introduction  .circle2 .kai2 > p{
-  width: 400px;
-  text-align:left;
-}
-
-.introduction .kai-2-2{
-  clear:both;
-}
-
-.introduction .circle3{
-  background: white;
-  margin-top: 10%;
-  margin-bottom: 220px;
-  margin-left: 5%;
-  width: 850px;
-  height: 850px;
-  border-radius: 50%;
-  border: solid 9px orange;
-}
-
-.introduction .circle3 .kai3 {
-  width: 400px;
-  text-align:center;
-  margin-top:160px;
-  margin-right: auto;
-  margin-left: 15%;
-  float: left;
-}
-
-.introduction  .circle3 .kai3 p{
-  width: 400px;
-  text-align:left;
-}
-
-.introduction .circle3 .kai3-photos>ul{
-  list-style: none;
-  margin-top: 170px;
-  margin-right: 5%;
-  margin-bottom: 220px;
-  padding:10px;
-  float:left;
-}
-
-.introduction .kai-3-2{
-  clear:both;
-}
-
-
+/*----------------------------------------ここまで３ページ目-------------------------*/
 footer{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
 }
 
 footer >hr{
-  height: 3px;
+  height: 0.5vw;
   background-color: lightgray;
-  width: 90%;
+  margin-top:10vw;
+  width: 100vw;
   border: none;
 }
 
-footer .mail>a{
-  margin-left: 10%;
+footer .mail{
+  list-style-type: none;
+  font-size:2vw;
+  text-align:center;
+}
+
+footer .mail li{
+  padding:2vw;
+  display:inline-block;
+  color:lightgray;
+}
+
+footer .mail li>a{
+  padding:2vw;
+  display:inline-block;
+  color:gray;
 }
 
 footer .mail>a:hover{
   opacity: 0.6;
-}
-
-footer .mail .mail-paragraph{
-  margin-top:4px;
-  padding-left:10px;
-}
-
-footer .mail .copyright{
-  color: lightgray;
-  margin-top:2px;
-  margin-left:60%;
-}
-
-footer .mail{
-    padding-top:20px;
-    padding-bottom:20px;
-    display: flex;
 }

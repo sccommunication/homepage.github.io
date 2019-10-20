@@ -5,30 +5,70 @@
     <title>SCを考える会のホームページ</title>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="SCを考える会のホームページです。">
-    <link rel="stylesheet" href="css/styles3.css">
+    <meta name="viewport"content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css">
+        <style type="text/css">
+          #photo {
+              width: 100vw;
+              height: 30vw;
+              margin: 0 auto;
+              text-align: left;
+              overflow: hidden;
+              position: relative;
+          }
+
+          #photo img {
+              top: -50%;
+              left: 0;
+              position:absolute;
+          }
+        </style>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+          $(function(){
+              var setImg = '#photo';
+              var fadeSpeed = 1600;
+              var switchDelay = 5000;
+
+              $(setImg).children('img').css({opacity:'0'});
+              $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+              setInterval(function(){
+                  $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              },switchDelay);
+          });
+        </script>
+
   </head>
   <body>
     <header>
-
-      <nav>
-        <li>
-          <a href ="index.html">
-          HOME
-          </a>
-        </li>
-        <li>
-          <a href ="SCconsidering2.html">
-          INFORMATION
-          </a>
-        </li>
-        <li>
-          <a href ="SCconsidering3.html">
-          Links
-          </a>
-        <li>
-      </nav>
-
+        <ul class="topnav">
+          <li>
+            <a class="active" href ="index.html">
+            HOME
+            </a>
+          </li>
+          <li>
+            <a href ="SCconsidering2.html">
+            Activities
+            </a>
+          </li>
+          <li>
+            <a href ="SCconsidering3.html">
+            Links
+            </a>
+          </li>
+        </ul>
+        <div id="photo" claas="photo">
+          <img src="img/picture1.jpg" width="100%" alt="ヘッダー画像１">
+          <img src="img/picture2.jpg" width="100%" alt="ヘッダー画像２">
+          <img src="img/picture2-2.jpg"  width="100%"alt="ヘッダー画像３">
+          <img src="img/picture3-1.jpg"  width="100%" alt="ヘッダー画像４">
+　　　　　</div>
     </header>
+
 
     <section class="groups">
       <h1>
@@ -44,19 +84,22 @@
       </section>
     </section>
 
+
+
     <footer>
       <hr>
-      <div class="mail">
-        <a href="mailto:sc.consider.communication@gmail.com" target="_blank">
-          <img src="img/mailicon.png"width="30"  alt=メール送信>
-        </a>
-        <p class="mail-paragraph">
-          :mail
-        </p>
-        <p class="copyright">
-          （C）SCを考える会
-        </p>
-      </div>
+      <ul class="mail">
+        <li>
+          <a href="mailto:sc.consider.communication@gmail.com" target="_blank">
+            問い合わせ
+          </a>
+        </li>
+        <li>
+          <p>
+            （C）SCを考える会
+          </p>
+        </li>
+      </ul>
     </footer>
 
   </body>

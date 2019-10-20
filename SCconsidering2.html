@@ -5,63 +5,110 @@
     <title>SCを考える会のホームページ</title>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="SCを考える会のホームページです。">
-    <link rel="stylesheet" href="css/styles2.css">
+    <meta name="viewport"content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css">
+        <style type="text/css">
+          #photo {
+              width: 100vw;
+              height: 30vw;
+              margin: 0 auto;
+              text-align: left;
+              overflow: hidden;
+              position: relative;
+          }
+
+          #photo img {
+              top: -50%;
+              left: 0;
+              position:absolute;
+          }
+        </style>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+          $(function(){
+              var setImg = '#photo';
+              var fadeSpeed = 1600;
+              var switchDelay = 5000;
+
+              $(setImg).children('img').css({opacity:'0'});
+              $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+              setInterval(function(){
+                  $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              },switchDelay);
+          });
+        </script>
+
   </head>
   <body>
     <header>
-
-      <nav>
-        <li>
-          <a href ="index.html">
-          HOME
-          </a>
-        </li>
-        <li>
-          <a href ="SCconsidering2.html">
-          INFORMATION
-          </a>
-        </li>
-        <li>
-          <a href ="SCconsidering3.html">
-          Links
-          </a>
-        </li>
-      </nav>
-
-    </header>
-
-    <section class="newinformation">
-      <h1>
-        <span style="border-bottom: solid 5px #3BAF75;">新着情報</span>
-      </h1>
-      <div class="newinformation-scrole">
-        <p>[2019/8/29]第3回SCを考える会の募集が終了しました。ありがとうございました。</p>
-        <p>[2019/8/29]第3回SCを考える会の開催が決定しました。開催日程は9/8です。</p>
-        <ul>
+        <ul class="topnav">
           <li>
-            <img src="img/SC3-picture1.png"width="400"  alt=第３回SCを考える会広報>
+            <a class="active" href ="index.html">
+            HOME
+            </a>
           </li>
           <li>
-            <img src="img/SC3-picture2.png"width="400"  alt=第３回SCを考える会広報>
+            <a href ="SCconsidering2.html">
+            Activities
+            </a>
+          </li>
+          <li>
+            <a href ="SCconsidering3.html">
+            Links
+            </a>
           </li>
         </ul>
-        <p>[2019/8/29]SCを考える会の公式ホームページを開設しました。</p>
+        <div id="photo" claas="photo">
+          <img src="img/picture1.jpg" width="100%" alt="ヘッダー画像１">
+          <img src="img/picture2.jpg" width="100%" alt="ヘッダー画像２">
+          <img src="img/picture2-2.jpg"  width="100%"alt="ヘッダー画像３">
+          <img src="img/picture3-1.jpg"  width="100%" alt="ヘッダー画像４">
+　　　　　</div>
+    </header>
+
+
+    <section class="katudouhoukoku">
+      <span class="katsudouhoukoku-midasi"style="border-bottom: solid 5px #3BAF75;">活動報告</span>
+      <div class="kai-1">
+        <button class="btn-2">
+          <span class="katudouhoukoku-title">第１回（2019年3月開催）</span>
+          <img src="img/picture1.JPG"  alt=picture1>
+        </button>
+      </div>
+      <div class="kai-2">
+        <button class="btn-2">
+          <span class="katudouhoukoku-title">第2回（2019年6月開催）</span>
+          <img src="img/picture2.JPG"width="300"  alt=picture2>
+        </button>
+      </div>
+      <div class="kai-3">
+        <button class="btn-2">
+          <span class="katudouhoukoku-title">第3回（2019年9月開催）</span>
+          <img src="img/picture3-1.JPG"width="300"  alt=picture3-1>
+        </section>
       </div>
     </section>
 
+
+
+
     <footer>
       <hr>
-      <div class="mail">
-        <a href="mailto:sc.consider.communication@gmail.com" target="_blank">
-          <img src="img/mailicon.png"width="30"  alt=メール送信>
-        </a>
-        <p class="mail-paragraph">
-          :mail
-        </p>
-        <p class="copyright">
-          （C）SCを考える会
-        </p>
-      </div>
+      <ul class="mail">
+        <li>
+          <a href="mailto:sc.consider.communication@gmail.com" target="_blank">
+            問い合わせ
+          </a>
+        </li>
+        <li>
+          <p>
+            （C）SCを考える会
+          </p>
+        </li>
+      </ul>
     </footer>
 
   </body>
