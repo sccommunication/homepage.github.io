@@ -652,14 +652,59 @@ section.katudouhoukoku{
   margin-left: auto;
   margin-top:10vw;
 }
+
+@media all and (max-width:320px){
+  section.katudouhoukoku{
+    text-align: center;
+    width:60vw;
+    height: 150vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:40vw;
+  }
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  section.katudouhoukoku{
+    text-align: center;
+    width:60vw;
+    height: 150vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:40vw;
+  }
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  section.katudouhoukoku{
+    text-align: center;
+    width:60vw;
+    height: 150vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:10vw;
+  }
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+  section.katudouhoukoku{
+    text-align: center;
+    width:60vw;
+    height: 150vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:10vw;
+  }
+}
+
 div.kai-1>button{
   display: inline-block;
   position: relative;
   background: none;
   border: none;
   color: #fff;
-  width:40vw;
-  height:40vw;
+  width:50vw;
+  height:50vw;
   font-size: 3vw;
   cursor: pointer;
   background: lavender;
@@ -672,8 +717,8 @@ div.kai-2>button{
   background: none;
   border: none;
   color: #fff;
-  width:40vw;
-  height:40vw;
+  width:50vw;
+  height:50vw;
   font-size: 3vw;
   cursor: pointer;
   background: honeydew;
@@ -686,19 +731,19 @@ div.kai-3>button{
   background: none;
   border: none;
   color: #fff;
-  width:40vw;
-  height:40vw;
+  width:50vw;
+  height:50vw;
   font-size: 3vw;
   cursor: pointer;
   background: lavenderblush;
   margin-top:5vw;
 }
 
-
 .katudouhoukoku-title{
   color: lightskyblue;
   display: block;
 }
+
 button::before, button::after{
   content:"";
   width: 0;
@@ -716,9 +761,11 @@ button::before, button::after{
   transition: all 0.2s linear;
   background: skyblue;
 }
+
 button:hover::before, button:hover::after{
   width: 100%;
 }
+
 button:hover .katudouhoukoku-title::before, button:hover .katudouhoukoku-title::after{
   height: 100%;
 }
@@ -768,19 +815,68 @@ button.btn-2 >img{
 
 /*----------------------------------------ここから３ページ目-------------------------*/
 .groups{
-  width: 80%;
-  font-size: 25px;
+  width: 80vw;
+  font-size: 3vw;
   text-align: left;
   margin-right:auto;
   margin-left: auto;
+  margin-top: 5vw;
+}
+
+@media all and (max-width:320px){
+  .groups{
+    width: 80vw;
+    font-size: 3vw;
+    text-align: left;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 40vw;
+  }
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  .groups{
+    width: 80vw;
+    font-size: 3vw;
+    text-align: left;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 40vw;
+  }
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  .groups{
+    width: 80vw;
+    font-size: 3vw;
+    text-align: left;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 40vw;
+  }
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+  .groups{
+    width: 80vw;
+    font-size: 3vw;
+    text-align: left;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 5vw;
+  }
 }
 
 .groups h1{
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 .groups .group1{
   text-align: center;
+}
+
+.groups .group1 img{
+  width:20vw;
 }
 
 .groups .group1 >nav>a{
