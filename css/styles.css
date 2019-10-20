@@ -235,7 +235,7 @@ section.rinen:hover{
   }
 
   section.rinen >div.rinenshoukai>p{
-    font-size:2vw;
+    font-size:3vw;
   }
 
 
@@ -647,7 +647,7 @@ section.rinen:hover{
 section.katudouhoukoku{
   text-align: center;
   width:60vw;
-  height: 150vw;
+  height: 180vw;
   margin-right: auto;
   margin-left: auto;
   margin-top:10vw;
