@@ -1425,7 +1425,7 @@ div.kai-3>button:hover{
   border: none;
   color: #fff;
   width:80vw;
-  height:50vw;
+  height:60vw;
   font-size: 3vw;
   cursor: pointer;
   background: lavenderblush;
@@ -1824,7 +1824,10 @@ button:hover .katudouhoukoku-title::before, button:hover .katudouhoukoku-title::
   height: 100%;
 }
 
-
+.SC-Report{
+  padding-top: 1vw;
+  color :lightskyblue;
+}
 
 
 /*--- Button 2 -------*/
