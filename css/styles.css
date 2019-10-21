@@ -646,7 +646,7 @@ section.rinen:hover{
 
 section.katudouhoukoku{
   text-align: center;
-  width:60vw;
+  width:100vw;
   height: 180vw;
   margin-right: auto;
   margin-left: auto;
@@ -656,7 +656,7 @@ section.katudouhoukoku{
 @media all and (max-width:320px){
   section.katudouhoukoku{
     text-align: center;
-    width:60vw;
+    width:100vw;
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
@@ -667,7 +667,7 @@ section.katudouhoukoku{
 @media all and (min-width:321px) and (max-width:480px){
   section.katudouhoukoku{
     text-align: center;
-    width:60vw;
+    width:100vw;
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
@@ -678,7 +678,7 @@ section.katudouhoukoku{
 @media all and (max-width:768px) and (min-width:481px){
   section.katudouhoukoku{
     text-align: center;
-    width:60vw;
+    width:100vw;
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
@@ -689,7 +689,7 @@ section.katudouhoukoku{
 @media all and (max-width:1024px) and (min-width:769px){
   section.katudouhoukoku{
     text-align: center;
-    width:60vw;
+    width:100vw;
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
@@ -697,6 +697,8 @@ section.katudouhoukoku{
   }
 }
 
+
+/*------------------------------ここからボックス-------------------------*/
 div.kai-1>button{
   display: inline-block;
   position: relative;
@@ -710,6 +712,309 @@ div.kai-1>button{
   background: lavender;
   margin-top:5vw;
 }
+
+div.kai-1>button:hover{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:80vw;
+  height:50vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: lavender;
+  margin-top:5vw;
+}
+
+div.btn-2-1{
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.kai-1>button:hover>.btn-2-1{
+  width:40vw;
+  margin-left: 0vw;
+  float:left;
+}
+
+div.btn-2-2{
+   display:none;
+}
+
+div.kai-1>button:hover>.btn-2-2>p{
+  text-align: left;
+}
+
+div.btn-2-2>ul{
+  padding-top:5vw;
+  list-style: none;
+}
+
+div.btn-2-2>ul>li{
+  padding:2vw;
+  display:inline;
+}
+
+div.btn-2-2>ul>li>img{
+  width:10vw;
+}
+
+div.kai-1>button:hover>.btn-2-2{
+  float:left;
+  width:30vw;
+  font-size: 2vw;
+  color: dimgray;
+  display: block;
+}
+
+@media all and (max-width:320px){
+  div.kai-1>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.kai-1>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:90vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-1>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-1>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-1>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-1>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  div.kai-1>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.kai-1>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:90vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-1>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-1>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-1>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-1>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  div.kai-1>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.kai-1>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavender;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-1>button:hover>.btn-2-1{
+    width:40vw;
+    margin-left: 0vw;
+    float:left;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.kai-1>button:hover>.btn-2-2>p{
+    text-align: left;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:10vw;
+  }
+
+  div.kai-1>button:hover>.btn-2-2{
+    float:left;
+    width:30vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+  }
+}
+
+/*--------------------------------ここまでボックス1-------------------------*/
+/*--------------------------------ここからボックス2-------------------------*/
 
 div.kai-2>button{
   display: inline-block;
@@ -725,6 +1030,380 @@ div.kai-2>button{
   margin-top:5vw;
 }
 
+div.kai-2>button:hover{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:80vw;
+  height:70vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: honeydew;
+  margin-top:5vw;
+}
+
+div.btn-2-1{
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.kai-2>button:hover>.btn-2-1{
+  width:40vw;
+  margin-left: 0vw;
+  float:left;
+}
+
+div.btn-2-2{
+   display:none;
+}
+
+div.kai-2>button:hover>.btn-2-2>p{
+  text-align: left;
+}
+
+div.btn-2-2>ul{
+  padding-top:5vw;
+  list-style: none;
+}
+
+div.btn-2-2>ul>li{
+  padding:2vw;
+  display:inline;
+}
+
+div.btn-2-2>ul>li>img{
+  width:10vw;
+}
+
+div.kai-2>button:hover>.btn-2-2{
+  float:left;
+  width:30vw;
+  font-size: 2vw;
+  color: dimgray;
+  display: block;
+}
+
+@media all and (max-width:320px){
+  div.kai-2>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.kai-2>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:120vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-2>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-2>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  div.kai-2>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.kai-2>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:100vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-2>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-2>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  div.kai-2>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.kai-2>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:80vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-2>button:hover>.btn-2-1{
+    width:40vw;
+    margin-left: 0vw;
+    float:left;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>p{
+    text-align: left;;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:10vw;
+  }
+
+  div.kai-2>button:hover>.btn-2-2{
+    float:left;
+    width:30vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+  }
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+  div.kai-2>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.kai-2>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:60vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: honeydew;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-2>button:hover>.btn-2-1{
+    width:40vw;
+    margin-left: 0vw;
+    float:left;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.kai-2>button:hover>.btn-2-2>p{
+    text-align: left;;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:10vw;
+  }
+
+  div.kai-2>button:hover>.btn-2-2{
+    float:left;
+    width:30vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+  }
+}
+
+/*----------------------------ここまでがボックス２------------------------------*/
+/*----------------------------ここからがボックス３------------------------------*/
 div.kai-3>button{
   display: inline-block;
   position: relative;
@@ -738,6 +1417,381 @@ div.kai-3>button{
   background: lavenderblush;
   margin-top:5vw;
 }
+
+div.kai-3>button:hover{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  width:80vw;
+  height:50vw;
+  font-size: 3vw;
+  cursor: pointer;
+  background: lavenderblush;
+  margin-top:5vw;
+}
+
+div.btn-2-1{
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.kai-3>button:hover>.btn-2-1{
+  width:40vw;
+  margin-left: 0vw;
+  float:left;
+}
+
+div.btn-2-2{
+   display:none;
+}
+
+div.kai-3>button:hover>.btn-2-2>p{
+  text-align: left;
+}
+
+div.btn-2-2>ul{
+  padding-top:5vw;
+  list-style: none;
+}
+
+div.btn-2-2>ul>li{
+  padding:2vw;
+  display:inline;
+}
+
+div.btn-2-2>ul>li>img{
+  width:10vw;
+}
+
+div.kai-3>button:hover>.btn-2-2{
+  float:left;
+  width:30vw;
+  font-size: 2vw;
+  color: dimgray;
+  display: block;
+}
+
+@media all and (max-width:320px){
+  div.kai-3>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.kai-3>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:120vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-3>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-3>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (min-width:321px) and (max-width:480px){
+  div.kai-3>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.kai-3>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:100vw;
+    font-size: 5vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-3>button:hover>.btn-2-1{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:20vw;
+  }
+
+  div.kai-3>button:hover>.btn-2-2{
+    width:70vw;
+    margin-right:auto;
+    margin-left: auto;
+    float: none;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>p{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    padding-top: 5vw;
+    text-align: left;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>ul{
+    width:70vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media all and (max-width:768px) and (min-width:481px){
+  div.kai-3>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.kai-3>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:80vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-3>button:hover>.btn-2-1{
+    width:40vw;
+    margin-left: 0vw;
+    float:left;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>p{
+    text-align: left;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:10vw;
+  }
+
+  div.kai-3>button:hover>.btn-2-2{
+    float:left;
+    width:30vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+  }
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+  div.kai-3>button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:50vw;
+    height:50vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.kai-3>button:hover{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    width:80vw;
+    height:60vw;
+    font-size: 3vw;
+    cursor: pointer;
+    background: lavenderblush;
+    margin-top:5vw;
+  }
+
+  div.btn-2-1{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.kai-3>button:hover>.btn-2-1{
+    width:40vw;
+    margin-left: 0vw;
+    float:left;
+  }
+
+  div.btn-2-2{
+     display:none;
+  }
+
+  div.kai-3>button:hover>.btn-2-2>p{
+    text-align: left;
+  }
+
+  div.btn-2-2>ul{
+    padding-top:5vw;
+    list-style: none;
+  }
+
+  div.btn-2-2>ul>li{
+    padding:2vw;
+    display:inline;
+  }
+
+  div.btn-2-2>ul>li>img{
+    width:10vw;
+  }
+
+  div.kai-3>button:hover>.btn-2-2{
+    float:left;
+    width:30vw;
+    font-size: 2vw;
+    color: dimgray;
+    display: block;
+  }
+}
+
+/*----------------------------ここまでがボックス３------------------------------*/
+
 
 .katudouhoukoku-title{
   color: lightskyblue;
@@ -769,6 +1823,9 @@ button:hover::before, button:hover::after{
 button:hover .katudouhoukoku-title::before, button:hover .katudouhoukoku-title::after{
   height: 100%;
 }
+
+
+
 
 /*--- Button 2 -------*/
 
@@ -802,7 +1859,7 @@ button:hover .katudouhoukoku-title::before, button:hover .katudouhoukoku-title::
   transition-delay: 0s;
 }
 
-button.btn-2 >img{
+button.btn-2 >.btn-2-1>img{
   padding-top: 5vw;
   width:30vw;
 }
