@@ -1932,10 +1932,12 @@ button.btn-2 >.btn-2-1>img{
 }
 
 .groups .group1{
+  margin-top:5vw;
   text-align: center;
 }
 
 .groups .group1 img{
+  margin-top:2vw;
   width:20vw;
 }
 
