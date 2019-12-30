@@ -105,6 +105,7 @@ input, select {
 body{
   color: #333;
   font-family: Verdana,sans-serif;
+  line-height: 1.6;
   width:100vw;
   margin: 0;
 }
@@ -154,6 +155,7 @@ ul.topnav li a.active {
  /*ここまでトップメニュー*/
 
 
+
 /*ここから理念のボックス*/
 section.rinen{
   margin:10vw;
@@ -190,14 +192,15 @@ section.rinen >div.rinenshoukai{
   margin-right: auto;
 }
 
-section.rinen >div.rinenshoukai>p{
+section.rinen >div.rinenshoukai>p.open{
   font-size:2vw;
 }
 
-section.rinen:hover{
-  overflow: hidden;
-  height:40vw;
-  width:70vw;
+section.rinen >div.rinenshoukai>p.return{
+  text-align: center;
+  padding-top: 4vw;
+  font-size:3vw;
+  color: lightgray;
 }
 
 @media all and (max-width:320px) {
@@ -234,17 +237,17 @@ section.rinen:hover{
     margin-right: auto;
   }
 
-  section.rinen >div.rinenshoukai>p{
-    font-size:3vw;
+  section.rinen >div.rinenshoukai>p.open{
+    font-size:5vw;
   }
 
-
-
-  section.rinen:hover{
-    overflow: hidden;
-    height:75vw;
-    width:70vw;
+  section.rinen >div.rinenshoukai>p.return{
+    text-align: center;
+    padding-top: 4vw;
+    font-size:6vw;
+    color: lightgray;
   }
+
 }
 
 @media all and (min-width:321px) and (max-width: 480px){
@@ -281,20 +284,20 @@ section.rinen:hover{
     margin-right: auto;
   }
 
-  section.rinen >div.rinenshoukai>p{
-    font-size:2vw;
+  section.rinen >div.rinenshoukai>p.open{
+    font-size:5vw;
   }
 
-
-
-  section.rinen:hover{
-    overflow: hidden;
-    height:60vw;
-    width:70vw;
+  section.rinen >div.rinenshoukai>p.return{
+    text-align: center;
+    padding-top: 4vw;
+    font-size:6vw;
+    color: lightgray;
   }
+
 }
 
-@media all and (min-width: 480px) and (max-width: 768px){
+@media all and (min-width: 481px) and (max-width: 768px){
   section.rinen{
     margin-top:20vw;
     width:70vw;
@@ -328,16 +331,15 @@ section.rinen:hover{
     margin-right: auto;
   }
 
-  section.rinen >div.rinenshoukai>p{
-    font-size:3vw;
+  section.rinen >div.rinenshoukai>p.open{
+    font-size:4vw;
   }
 
-
-
-  section.rinen:hover{
-    overflow: hidden;
-    height:70vw;
-    width:70vw;
+  section.rinen >div.rinenshoukai>p.return{
+    text-align: center;
+    padding-top: 4vw;
+    font-size:5vw;
+    color: lightgray;
   }
 }
 
@@ -375,17 +377,18 @@ section.rinen:hover{
     margin-right: auto;
   }
 
-  section.rinen >div.rinenshoukai>p{
-    font-size:3vw;
+  section.rinen >div.rinenshoukai>p.open{
+    font-size:4vw;
+  }
+
+  section.rinen >div.rinenshoukai>p.return{
+    text-align: center;
+    padding-top: 4vw;
+    font-size:5vw;
+    color: lightgray;
   }
 
 
-
-  section.rinen:hover{
-    overflow: hidden;
-    height:70vw;
-    width:70vw;
-  }
 }
 
 
