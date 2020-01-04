@@ -653,7 +653,7 @@ section.katudouhoukoku{
   height: 180vw;
   margin-right: auto;
   margin-left: auto;
-  margin-top:10vw;
+  margin-top:30vw;
 }
 
 @media all and (max-width:320px){
@@ -663,7 +663,7 @@ section.katudouhoukoku{
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
-    margin-top:40vw;
+    margin-top:60vw;
   }
 }
 
@@ -674,7 +674,7 @@ section.katudouhoukoku{
     height: 180vw;
     margin-right: auto;
     margin-left: auto;
-    margin-top:40vw;
+    margin-top:60vw;
   }
 }
 
@@ -1883,7 +1883,7 @@ button.btn-2 >.btn-2-1>img{
   text-align: left;
   margin-right:auto;
   margin-left: auto;
-  margin-top: 5vw;
+  margin-top: 25vw;
 }
 
 @media all and (max-width:320px){
@@ -1893,7 +1893,7 @@ button.btn-2 >.btn-2-1>img{
     text-align: left;
     margin-right:auto;
     margin-left: auto;
-    margin-top: 40vw;
+    margin-top: 60vw;
   }
 }
 
@@ -1904,7 +1904,7 @@ button.btn-2 >.btn-2-1>img{
     text-align: left;
     margin-right:auto;
     margin-left: auto;
-    margin-top: 40vw;
+    margin-top: 60vw;
   }
 }
 
