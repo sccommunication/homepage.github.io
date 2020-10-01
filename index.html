@@ -7,6 +7,7 @@
     <meta name="description" content="SCを考える会のホームページです。">
     <meta name="viewport"content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="sha256.js"></script>
         <style type="text/css">
           #photo {
               width: 100vw;
@@ -65,6 +66,9 @@
             リンク
             </a>
           </li>
+          <li>
+            <p id="login">ログイン</p>
+          </li>
         </ul>
         <div id="photo" claas="photo">
           <img src="img/picture1.JPG" width="100%" alt="ヘッダー画像１">
@@ -73,6 +77,30 @@
           <img src="img/picture3-1.JPG"  width="100%" alt="ヘッダー画像４">
 　　　　　</div>
     </header>
+    <script>
+      document.getElementById('login').addEventListener('click',()=>{
+        var password = prompt("パスワードを入力してください");
+        if(password!=null){
+          auth(password);
+        }
+      });
+      function hash(text) {
+        const sha = new jsSHA('SHA-256', 'TEXT');
+        sha.update(text);
+        return sha.getHash('HEX');
+      }
+      function auth(password) {
+        const url = hash(password);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.send();
+        xhr.onload = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            window.location = url;
+          }
+          }
+      };
+    </script>
 
 <!--=======================理念===========================-->
 <!--<button id="btn1">ボタン１</button>-->

@@ -147,6 +147,14 @@ ul.topnav li a.active {
 	background-color: peru;
 }
 
+ul.topnav li p{
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+ul.to
 @media all and (max-width: 480px) {
 	 ul.topnav li {
 		float: none;
