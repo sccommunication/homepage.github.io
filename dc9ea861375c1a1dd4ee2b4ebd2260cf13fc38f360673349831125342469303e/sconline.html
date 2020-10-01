@@ -88,6 +88,8 @@
       }
       function auth(password) {
         const url = hash(password)+"sconline.html";
+        console.log(url);
+        console.log(1);
         const xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.send();
