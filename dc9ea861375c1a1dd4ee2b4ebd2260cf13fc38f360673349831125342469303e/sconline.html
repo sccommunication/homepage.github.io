@@ -74,32 +74,6 @@
           <img src="../img/picture3-1.JPG"  width="100%" alt="ヘッダー画像４">
 　　　　　</div>
     </header>
-    <script>
-      document.getElementById('login').addEventListener('click',()=>{
-        var password = prompt("パスワードを入力してください");
-        if(password!=null){
-          auth(password);
-        }
-      });
-      function hash(text) {
-        const sha = new jsSHA('SHA-256', 'TEXT');
-        sha.update(text);
-        return sha.getHash('HEX');
-      }
-      function auth(password) {
-        const url = hash(password)+"sconline.html";
-        console.log(url);
-        console.log(1);
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
-        xhr.send();
-        xhr.onload = function () {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            window.location = url;
-          }
-          }
-      };
-    </script>
 
 
 
